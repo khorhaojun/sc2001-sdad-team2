@@ -74,8 +74,8 @@ if __name__ == "__main__":
     #n fixed, vary S
     print("=== Varying S with fixed n ===")
     n = int(input("Enter array size n:"))
-    #thresholds = [4, 8, 16, 32, 64, 128, 256]
+    thresholds = [4, 8, 16, 32, 64, 128, 256]
         ##Not sure whether to use these specific thresholds or just all integers from 4 to 256
-    for S in range(4, 257):
+    for S in thresholds:
         comparisons, t = test(n, S)
         print(f"Array Size: {n}, Threshold: {S}, Comparisons: {comparisons}, Time: {t:.4f} seconds")
