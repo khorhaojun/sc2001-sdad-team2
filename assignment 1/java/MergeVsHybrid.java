@@ -5,7 +5,7 @@ import java.io.IOException;
 public class MergeVsHybrid {
 
     private static final int N_VALUE = 10_000_000; // dataset size
-    private static final int[] S_VALUES = {10, 50}; // thresholds for HybridSort
+    private static final int[] S_VALUES = {50, 300}; // thresholds for HybridSort
     private static final String OUTPUT_FILE = "merge_vs_hybrid.csv";
 
     public static void main(String[] args) {

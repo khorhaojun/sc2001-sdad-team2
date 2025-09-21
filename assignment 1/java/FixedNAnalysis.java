@@ -5,7 +5,7 @@ import java.io.IOException;
 public class FixedNAnalysis {
 
     private static final int[] N_VALUES = {1_000, 10_000, 100_000, 1_000_000,10_000_000}; // input sizes
-    private static final int[] S_VALUES = {0, 10, 25, 32, 50, 75, 120, 145, 160, 185, 200}; // thresholds
+    private static final int[] S_VALUES = {0, 10, 25, 32, 50, 75, 120, 145, 160, 185, 200, 300}; // thresholds
     private static final String OUTPUT_FILE = "partC_ii.csv";
 
     public static void main(String[] args) {

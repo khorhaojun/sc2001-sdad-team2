@@ -1,8 +1,11 @@
 public class InsertionSort {
 
+    private static long comparisons=0;
+
     public static void insertionSort(int[] arr, int left, int right) {
         for (int i = left + 1; i <= right; i++) {
-            for (int j = i; j > 0; j--) {
+            for (int j = i; j > left; j--) {
+                comparisons++;
                 if (arr[j] < arr[j - 1])
                     swap(arr, j, j - 1);
                 else
@@ -16,4 +19,13 @@ public class InsertionSort {
         arr[i] = arr[j];
         arr[j] = temp;
     }
+
+    public static void setComparisons(long comp) {
+		comparisons=comp;
+	}
+
+    public static long getComparisons() {
+        return comparisons;
+    }
+
 }
