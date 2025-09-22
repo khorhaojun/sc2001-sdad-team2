@@ -1,0 +1,4 @@
+Algorithm,Dataset Size,S Value,Avg Comparisons,Avg Time (ms)
+MergeSort,10000000,,220098777,2542
+HybridSort,10000000,32,234188009,1964
+HybridSort,10000000,300,538802247,2133
