@@ -1,19 +1,6 @@
 public class HybridSort {
     private static long comparisons =0;
 
-    public static void insertionSort(int[] arr, int left, int right) {
-        for (int i = left + 1; i <= right; i++) {
-            int key = arr[i];
-            int j = i - 1;
-            while (j >= left && arr[j] > key) {
-            	comparisons++;
-                arr[j + 1] = arr[j];
-                j--;
-            }
-            arr[j + 1] = key;
-        }
-    }
-
     // Merge two subarrays
     public static void merge(int[] arr, int left, int mid, int right) {
         // Sizes of the two subarrays
@@ -78,7 +65,7 @@ public class HybridSort {
 
     public static void hybridSort(int[] arr, int left, int right, int S) {
         if (right - left + 1 <= S) {
-            insertionSort(arr, left, right);  // Switch to insertion sort for small subarrays
+            InsertionSort.insertionSort(arr, left, right);  // Switch to insertion sort for small subarrays
         } else {
             if (left < right) {
                 int mid = (left + right) / 2;
