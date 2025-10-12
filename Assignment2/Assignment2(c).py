@@ -78,7 +78,7 @@ def dijkstra_heap(graph, src):
     return comparisons
 
 ## ---Empirical test---
-def test_performance_matrix()
+def test_performance_matrix():
     print("V,E,Comparisons,Time_ns")
     for V in range(100, 1001, 100):
         E = min(20000, V * (V - 1))
